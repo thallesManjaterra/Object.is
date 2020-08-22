@@ -6,7 +6,7 @@ const { always, cond, equals, T, curry } = require('ramda');
 
 const isItNegZero = (x) => x == 0 && 1/x == -Infinity;
 
-const isNaN = (x) => x !== x;
+const isNaN = (x) => x != x;
 
 const arrMethod = curry((m, f) => (...xs) => xs[m](f))
 
